@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!-- luke's styling -->
+	<script src="jquery-1.11.3.min.js"></script>
+	<script type = "text/javascript" language = "javascript">
+
+		$(document).ready(function(){
+			$("nav ul li").click(function(){
+				$(".clicked-div").addClass("unclicked-div");
+				$(".clicked-div").removeClass("clicked-div");
+				$(this).children("div").addClass("clicked-div").removeClass("unclicked-div");
+			});
+		});
+	</script>
+
+	<meta charset="UTF-8" />
+</head>
+<body>
+
+
+
+<!-- Header -->
+
+<header>
+
+	<nav>
+		<ul>
+			<li><div class="unclicked-div">About</div></li>
+			<li><div class="unclicked-div">Portfolio</div></li>
+			<li><div class="unclicked-div">Contact</div></li>
+		</ul>
+	</nav>
+
+<div class="header-content">
+	<img class="profile-image" src="img/profile-image.jpg">
+  	<h1> Luke Bugbee </h1>
+  	<p class="kicker"> visual designer </p>
+</div>
+
+</header>
+
+
+
+<!-- Case Studies -->
+
+<div class="case-study" id="case-study-1">
+	<div class="project-description">
+	<h2>Project Header</h2>
+	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+	<a class="button">Read More</a></div>
+	</div>
+</div>
+
+<div class="case-study" id="case-study-2">
+	<div class="project-description">
+	<h2>Project Header</h2>
+	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+	<a class="button">Read More</a></div>
+	</div>
+</div>
+
+<div class="case-study" id="case-study-3">
+	<div class="project-description">
+
+	<h2>Project Header</h2>
+
+	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+	<a class="button">Read More</a></div>
+
+	</div>
+</div>
+
+<!-- work-gallery -->
+
+<div class="gallery">
+	<div class="gallery-image"><p>X</p></div>
+	<div class="gallery-image"><p>X</p></div>
+	<div class="gallery-image"><p>X</p></div>
+	<div class="gallery-image"><p>X</p></div>
+	<div class="gallery-image"><p>X</p></div>
+	<div class="gallery-image"><p>X</p></div>
+	<div class="gallery-image"><p>X</p></div>
+	<div class="gallery-image"><p>X</p></div>
+	<div class="gallery-image"><p>X</p></div>
+</div>
+
+</body>
+
+
+
+</html>
