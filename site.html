@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!-- luke's styling -->
+	<script src="jquery-1.11.3.min.js"></script>
+	<script type = "text/javascript" language = "javascript">
+
+		$(document).ready(function(){
+			$("nav ul li").click(function(){
+				$(".clicked-div").addClass("unclicked-div");
+				$(".clicked-div").removeClass("clicked-div");
+				$(this).children("div").addClass("clicked-div").removeClass("unclicked-div");
+			});
+		});
+	</script>
+
+	<meta charset="UTF-8" />
+</head>
+<body>
+
+
+
+<!-- Header -->
+
+<header>
+
+	<nav>
+		<ul>
+			<li><div class="unclicked-div">About</div></li>
+			<li><div class="unclicked-div">Portfolio</div></li>
+			<li><div class="unclicked-div">Contact</div></li>
+		</ul>
+	</nav>
+
+<div class="header-content">
+	<img class="profile-image" src="assets/profile-image.jpg">
+  	<h1> Luke Bugbee </h1>
+  	<p class="kicker"> visual designer </p>
+</div>
+
+</header>
+
+
+
+<!-- Case Studies -->
+
+<div class="case-study" id="case-study-1">
+	<div class="project-description">
+	<h2>Project Header</h2>
+	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+	<a class="button">Read More</a></div>
+	</div>
+</div>
+
+<div class="case-study" id="case-study-2">
+	<div class="project-description">
+	<h2>Project Header</h2>
+	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+	<a class="button">Read More</a></div>
+	</div>
+</div>
+
+<div class="case-study" id="case-study-3">
+	<div class="project-description">
+
+	<h2>Project Header</h2>
+
+	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+	<a class="button">Read More</a></div>
+
+	</div>
+</div>
+
+<!-- work-gallery -->
+
+<div class="gallery">
+	<img class="gallery-img" src="assets/design-gallery/9.jpg">
+	<img class="gallery-img" src="assets/design-gallery/2.png">
+	<img class="gallery-img" src="assets/design-gallery/3.png">
+	<img class="gallery-img" src="assets/design-gallery/4.png">
+	<img class="gallery-img" src="assets/design-gallery/5.png">
+	<img class="gallery-img" src="assets/design-gallery/6.jpg">
+	<img class="gallery-img" src="assets/design-gallery/7.png">
+	<img class="gallery-img" src="assets/design-gallery/8.png">
+	<img class="gallery-img" src="assets/design-gallery/9.jpg">
+	<img class="gallery-img" src="assets/design-gallery/10.png">
+</div>
+
+<!-- Contact Form -->    
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      textarea {
+	resize: none;
+}
+.form-label {
+	font-size: 12px;
+	color: #5e9bfc;
+	margin: 0;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+	border-radius: 0;
+	border-color: #ccc;
+   	border-width: 0 0 2px 0;
+   	border-style: none none solid none;
+   	box-shadow: none;
+}
+.form-control:focus {
+	box-shadow: none;
+	border-color: #5e9bfc;
+}
+.js-hide-label {
+	opacity: 0; 	
+}
+.js-unhighlight-label {
+	color: #999 
+}
+.btn-start-order {
+	background: 0 0 #ffffff;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+	border-color: #5e9bfc;
+	color: #5e9bfc;
+}
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+        
+
+    <div class="container">
+  <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
+        <h2>Contact</h2>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+          <form id="contact-form" class="form" action="#" method="POST" role="form">
+              <div class="form-group">
+                  <label class="form-label" for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="email">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="subject">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>                                 
+              </div>
+              <div class="text-center">
+                  <button type="submit" class="btn btn-start-order">Send Message</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+  
+
+</body>
+
+
+
+</html>
