@@ -55,7 +55,7 @@ nav ul li {
 }
 
 .case-study {
-	height:400px;
+	height:600px;
 	width:100%;
 	position:relative;
 }
@@ -82,6 +82,18 @@ nav ul li {
 	color:white;
 }
 
+#case-study-2 .project-description h2 {
+	font-style: bold;
+	font-size:3em;
+	color:#68B0FD;
+	padding-bottom: 10px;
+}
+
+#case-study-2 .project-description p {
+	font-style: strong;
+	color:#68B0FD;
+}
+
 #case-study-1 {
 	background-color:#68B0FD;
 }
@@ -92,6 +104,12 @@ nav ul li {
 
 #case-study-3 {
 	background-color:#68B0FD;
+}
+
+.container {
+	height:600px;
+	width:100%;
+	position:relative;
 }
 
 .button {
@@ -117,24 +135,43 @@ nav ul li {
 }
 
 .gallery {
-  /* Prevent vertical gaps */
-  width:100%;
-  line-height: 0;
-   
-  -webkit-column-count: 4;
-  -webkit-column-gap:   4px;
-  -moz-column-count:    4;
-  -moz-column-gap:      4px;
-  column-count:         4;
-  column-gap:           4px;  
+	width:100%;
+	height:600px;
+}
+.shots,
+.attachments {
+  list-style: none;
+  padding: 0;
+}
+.shots li,
+.attachments li {
+  float: left;
+  width: 25%;
+}
+.shots img,
+.attachments img {
+  display: block;
+  width: 100%;
+}
+.shots a,
+.attachments a {
+  display: block;
 }
 
+.contact-form {
+	margin-top: 150px;
+	width:400px;
+	height:500px;
+	position:relative;
+	horizontal-align:center;
+	margin:auto;
+	background-color:#ccc;
+}
 
-.gallery-img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important;
-  padding-bottom: 4px;
+.contact-form p {
+	text-align:center;
+	margin-top:50%;
+	position:relative;
 }
 
 @-webkit-keyframes navhovercolor {
