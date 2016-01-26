@@ -2,107 +2,112 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" type="text/css" href="styles.css"> <!-- luke's styling -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="jquery-1.11.3.min.js"></script>
 	<script src="bower_components/jribbble/dist/jribbble.min.js"></script>
-	<script type = "text/javascript" language = "javascript">
-
-		$(document).ready(function(){
-			$("nav ul li").click(function(){
-				$(".clicked-div").addClass("unclicked-div");
-				$(".clicked-div").removeClass("clicked-div");
-				$(this).children("div").addClass("clicked-div").removeClass("unclicked-div");
-			});
-		});
-	</script>
-
 	<meta charset="UTF-8" />
 </head>
+
+
 <body>
 
 
 
-<!-- Header -->
+	<!-- Header -->
 
-<header>
+	<header>
 
-	<nav>
-		<ul>
-			<li><div class="unclicked-div">About</div></li>
-			<li><div class="unclicked-div">Portfolio</div></li>
-			<li><div class="unclicked-div">Contact</div></li>
-		</ul>
-	</nav>
+		<nav>
+			<script type = "text/javascript" language = "javascript">
+				$(document).ready(function(){
+					$("nav ul li").click(function(){
+						$(".clicked-div").addClass("unclicked-div");
+						$(".clicked-div").removeClass("clicked-div");
+						$(this).children("div").addClass("clicked-div").removeClass("unclicked-div");
+					});
+				});
+			</script>
+			<ul>
+				<li><div class="unclicked-div">About</div></li>
+				<li><div class="unclicked-div">Portfolio</div></li>
+				<li><div class="unclicked-div">Contact</div></li>
+			</ul>
+		</nav>
 
-<div class="header-content">
-	<img class="profile-image" src="assets/profile-image.jpg">
-  	<h1> Luke Bugbee </h1>
-  	<p class="kicker"> visual designer </p>
-</div>
+		<div class="header-content">
+			<img class="profile-image" src="assets/profile-circle-2.jpg">
+			<h1> Luke Bugbee </h1>
+			<p class="kicker"> Visual Designer </p>
+		</div>
 
-</header>
+	</header>
 
-
-
-<!-- Case Studies -->
-
-<div class="case-study" id="case-study-1">
-	<div class="project-description">
-	<h2>Project Header</h2>
-	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-	<a class="button">Read More</a></div>
+	<!-- About -->
+	<div class="about">
+		<div class="about-copy">
+			<h1><span class="title-styling">About</span></h1>
+			<p>Luke Bugbee is a Californian artist who has a passion for intricacy, detail, and beauty. His paper quillings consist of hundreds (sometimes thousands) of pieces of paper, each of which is individually cut, placed, and glued by hand into beautiful designs over a span of hundreds of hours. Luke's work has been featured in Adobe's Inspire Magazine, Bucketfeet.com, and Grafik Design Academy's yearly magazine based in Innsbruck, Austria. 
+			</p>
+		</div>
 	</div>
-</div>
 
-<div class="case-study" id="case-study-2">
-	<div class="project-description">
-	<h2>Project Header</h2>
-	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-	<a class="button">Read More</a></div>
+	<!-- Case Studies -->
+
+	<div class="case-study" id="case-study-1">
+		<div class="project-description">
+			<h2>Project Header</h2>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+			<a class="button">Read More</a></div>
+		</div>
 	</div>
-</div>
 
-<div class="case-study" id="case-study-3">
-	<div class="project-description">
-
-	<h2>Project Header</h2>
-
-	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-	<a class="button">Read More</a></div>
-
+	<div class="case-study" id="case-study-2">
+		<div class="project-description">
+			<h2>Project Header</h2>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+			<a class="button">Read More</a></div>
+		</div>
 	</div>
-</div>
 
-<!-- work-gallery -->
+	<div class="case-study" id="case-study-3">
+		<div class="project-description">
 
-<div class="gallery">
-<script>
-	$.jribbble.setToken ('01b7ecfbe82a2543dfe7cb5978ed643051f115f0605f4373053df72745f262c1');
-</script>
+			<h2>Project Header</h2>
 
-<script type = "text/javascript" language = "javascript">
-$.jribbble.users('Bugmango').shots({per_page: 36}).then(function(shots) {
-  var html = [];
-  
-  shots.forEach(function(shot) {
-    html.push('<li class="shots--shot">');
-    html.push('<a href="' + shot.html_url + '" target="_blank">');
-    html.push('<img src="' + shot.images.normal + '">');
-    html.push('</a></li>');
-  });
-  
-  $('.shots').html(html.join(''));
-});
-</script>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-<ul class="shots"></ul> 
-</div> 
+			<a class="button">Read More</a></div>
 
-<!-- Contact Form --> 
+		</div>
+	</div>
+
+	<!-- work-gallery -->
+
+	<div class="gallery">
+		<script>
+			$.jribbble.setToken ('01b7ecfbe82a2543dfe7cb5978ed643051f115f0605f4373053df72745f262c1');
+		</script>
+
+		<script type = "text/javascript" language = "javascript">
+			$.jribbble.users('Bugmango').shots({per_page: 36}).then(function(shots) {
+				var html = [];
+
+				shots.forEach(function(shot) {
+					html.push('<li class="shots--shot">');
+					html.push('<a href="' + shot.html_url + '" target="_blank">');
+					html.push('<img src="' + shot.images.normal + '">');
+					html.push('</a></li>');
+				});
+
+				$('.shots').html(html.join(''));
+			});
+		</script>
+
+		<ul class="shots"></ul> 
+	</div> 
+
+	<!-- Contact Form --> 
 
 	<div class="contact-form"><p>This is a placeholder for a future contact form.</p></div>
 </body>
